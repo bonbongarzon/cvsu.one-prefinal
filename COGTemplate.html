@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cogCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="COG">
+
+
+        <div class="wrap">
+            <img class="logo-holder" src="image 14.png" alt="cvsulogo" srcset="">
+            <div class="headerpdf">
+                <span>
+                    <p>Republic of the Philippines</p>
+                    <h1>Cavite State University</h1>
+                    <h3>Silang Campus</h3>
+                    <h4>Biga I, Silang, Cavite</h4>
+                    <h3>Department of Information Technology</h3>
+                </span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="cog_content">
+            <h2>Certification of Grades</h2>
+            <br>
+            <br>
+            <br>
+
+            <p>Date: {{dateOfRequest}}</p>
+
+            <br><br>
+
+            <p>To Whom It May Concern</p>
+            <p>This is to certify that MR/MS. <b>{{Name}}</b> a {{Course}} student, obtained the following grades
+                during
+                the {{semester}} of the School Year {{schoolyear}}</p>
+        </div>
+    </section>
+
+    <section class="grade-section">
+
+    </section>
+    <p>This certification is being issued upon the request of the above for <b>{{purpose}} </b>application only.</p>
+    <div class="author-cont">
+        <p>Prepared by</p>
+        <img src="assets/signature.png" alt="signature">
+        <p>{{author}}</p>
+    </div>
+</body>
+
+</html>

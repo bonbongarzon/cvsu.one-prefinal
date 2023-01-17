@@ -1,0 +1,11 @@
+{
+    "name": "bonbon/pdfsample",
+    "authors": [
+        {
+            "name": "cvsuone"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^2.0"
+    }
+}

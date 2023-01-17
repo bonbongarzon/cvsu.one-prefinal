@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>New Website</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="design.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <script src="script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+
+<!-- START OF DOUBLE NAVIGATION -->
+<nav>
+  <div class="main-upper-nav-bar">
+    <div class="upper-nav-bar">
+      <div>
+        <a href="#">Students</a>
+        <a href="#">Alumni</a>
+        <a href="#">Visitor</a>
+      </div>
+      <a href="#" class="cvsuone-logo">
+        <img src="assets/onelogowhite.logox1.png">
+      </a>
+      <a href="loginpage.html" class="cta-btn"> Log in </a>
+    </div>
+  </div>
+  <div class="main-lower-nav-bar">
+    <div class="lower-nav-bar">
+      <a href="#" class="cvsu-logo"><img src="assets/header-cvsu-logo-black2x.png" alt=""></a>
+      <a href="home.html">Study at CvSU</a>
+      <a href="#">About the University</a>
+      <a href="#">News & Updates</a>
+      <a href="#" id="registrar_nav_btn" class="active">Registrar</a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+<body onload="toggleRegistration()">
+
+  <!-- START OF HERO PANEL -->
+  <div class="home-hero-main">
+    <h3>Cavite State University - Silang Campus</h3>
+    <h1>Office of the Registrar
+      <hr>
+    </h1>
+
+  </div>
+
+  <div>
+
+  </div>
+
+  <!-- START OF SIDE PANEL -->
+
+  <section class="main-content">
+
+    <div class="main-sidepanel">
+
+      <a href="">Home</a>
+      <a href="" target="iframe_1">Announcement & Schedules</a>
+      <a href="#" onclick="showCvSUCourses()" id="courses-btn">CvSU Courses</a>
+      <a href="#" onclick="toggleRegistration()" id="reg-btn">Request Document</a>
+      <a href="" target="iframe_1">Online Services</a>
+      <a href="" target="iframe_1">Policies</a>
+      <a href="" target="iframe_1">Contact Us</a>
+    </div>
+
+
+    <section class="side-content">
+
+
+      <section id="guides">
+        <div class="guidelines">
+          <h1>Guidance Related to COVID -19</h1>
+          <p> The Cavite State University - Silang Campus have transitioned most of its operations remotely in
+            consideration of the safety and wellness of its students, faculty, and staff members. <br><br></p>
+
+          <h1>ISSUANCE OF OFFICIAL ACADEMIC DOCUMENTS</h1>
+          <p>Trascript of Record</p>
+          <p>The Official Transcript of Records is a record of the courses taken and grades earned of a student,
+            including
+            credits transferred from other schools. This may be issued for evaluation, employment, board exam, and/or
+            Commission on Higher Education (CHED) Certification of Authentication and Verification (CAV) purposes.</p>
+          <p>CERTIFICATES
+          </p>
+          <div>
+            <p>Certificates issued by the Loyola Schools Office of the Registrar include the following:
+            <ul>
+              <li>Certified True Copy of Diploma</li>
+              <li>Certificate of Good Moral Character</li>
+              <li>Certificate of Grades (by Semester)</li>
+              <li>Certificate of Non-Inssuance of ID</li>
+            </ul>
+            </p>
+          </div>
+          <h1>CONDITION FOR ISSUANCE OF OFFICIAL ACADEMIC DOCUMENTS</h1>
+
+          <p>Any Cavite State University - Silang Campus student and alumna may request copies of their transcipt of
+            records or certificates at any time. Students/graduates with hold order/ liability should be cleared by
+            the
+            concerned office first before the request will be processed. A graduate student on a provisional status
+            may
+            not be issued official documents pending the submission of admission requirements.
+          </p>
+
+
+        </div>
+        <div class="main">
+          <h1>General Procedure of Document Requests </h1>
+          <h3>STEP</h3>
+          <h3>REQUESTING PARTY</h3>
+          <h3>SC REGISTRAR’S OFFICE</h3>
+          <p class="step-num">STEP 1:<br> Login / Create Account</p>
+          <p> <a href="#">Login </a> or Register with you cvsu.one account. Register Here</p>
+          <p><br></p>
+
+          <p class="step-num">STEP 2:<br> Request</p>
+          <p>File a request and fill-up the necessary informations including mode of delivery & payment</p>
+          <p><br></p>
+          <p class="step-num">STEP 3:<br>Confirmation and Billing</p>
+          <p>Verifies and confirm details of request. </p>
+          <p>Checks eligibility of student for issuance of official academic records
+            <br> <br>
+            Verifies and asks for confirmation of details of request for scholastic documents.
+            <br> <br>
+            Sends billing information and payment instructions.
+          </p>
+          <p class="step-num">STEP 4:<br>Payment Processing</p>
+          <p>Pays for document request according to billing information and payment instructions.
+            <br><br>
+            Submits a scanned copy/ screenshot of deposit slip as proof of payment.
+            <br><br>
+            <span class="inside-note">
+              NOTE:Please wait for payment instructions before paying for your request.
+            </span>
+
+          </p>
+          <p><br></p>
+          <p class="step-num">STEP 5:<br> Payment Verification</p>
+          <p><br></p>
+          <p>Verifies proof of payment
+          </p>
+          <p class="step-num">STEP 6:<br>Document Issuance</p>
+          <p><br></p>
+          <p>Sends electronic (via email) or printed copies (via WExpress Courier Service) of the requested documents
+            to
+            the requesting party and/ or third party recipient.
+            <br><br>
+            <span class="inside-note">
+              NOTE:Due to campus access restrictions, printed documents shall be released only through an accredited
+              courier. Shipping charges apply.
+              <br><br>
+              Electronic documents are released only through registrar.silang@cvsu.edu.ph to the requestor's
+              identified
+              email address recipient.
+            </span>
+          </p>
+          <p class="guide-note">NOTE: The CvSU Silang Registrar's Office is currently receiving an unusual large
+            volume
+            of requests. The process of verifying requests via online channels is taking longer than the in-person
+            process. Average turnaround time is between 10 to 15 days.</p>
+        </div>
+      </section>
+
+
+      <section id="reg_courses" class="reg_courses">
+
+        <div>
+          <h1>Silang Campus</h1>
+          <h3>Courses Offered/Offerings</h3>
+          <ul>
+            <li>Bachelor of Elementary Education</li>
+            <li>Bachelor of Secondary Education</li>
+            <li>BS Business Management</li>
+            <li>BS Computer Science</li>
+            <li>BS Hospitality Management (formerly BS Hotel and Restaurant Management)</li>
+            <li>BS Information Technology</li>
+            <li>BS Psychology</li>
+            <li>BS Tourism Management</li>
+            <li>Laboratory / Science High School</li>
+          </ul>
+        </div>
+
+        <div>
+          <h1>Carmona Campus</h1>
+          <h3>Courses Offered/Offerings</h3>
+          <ul>
+            <li>Bachelor of Secondary Education</li>
+            <li>BS Business Management</li>
+
+            <li>BS Computer Engineering</li>
+            <li>BS Computer Science</li>
+            <li>BS Hospitality Management (formerly BS Hotel and Restaurant Management)</li>
+            <li>BS Industrial Technology (formerly Bachelor of Industrial Technology)</li>
+            <li> BS Information Technology</li>
+          </ul>
+        </div>
+        <div>
+          <h1>Tanza Campus</h1>
+          <h3>Courses Offered/Offerings</h3>
+          <ul>
+            <li>Bachelor of Elementary Education</li>
+            <li>Bachelor of Secondary Education</li>
+            <li>BS Business Management</li>
+            <li>BS Hospitality Management (formerly BS Hotel and Restaurant Management)</li>
+            <li>BS Information Technology</li>
+            <li>BS Tourism Management</li>
+            <li>BS Psychology</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+  </section>
+  <a href="requestdocs.html" class="end-cta-btn" id="end-cta-btn">Get a document</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<footer>
+  <div class="footer-secondary">
+    <div class="second-foot-content">
+
+      <img src="assets/cvsuone-logo-white.png" alt="">
+      <p class="tagline">Keep your documents in one place</p>
+
+      <div class="soc-links">
+        <span>Connect with Us!</span>
+        <a href="#">
+          <iconify-icon icon="ic:baseline-facebook"></iconify-icon> CvSU - Silang Campus
+        </a>
+
+
+        <a href="#">
+          <iconify-icon icon="ic:baseline-facebook"></iconify-icon> CvSU Silang - OSAS
+        </a>
+
+        <a href="#">
+          <iconify-icon icon="material-symbols:mark-email-read-outline"></iconify-icon>registrar.silang@cvsu.edu.ph
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer-main">
+    <div>
+      <img src="assets/cvsu-logo-name-white.png" alt="">
+      <span>© 2022 Cavite State University - Silang</span>
+      <ul>
+        <li>
+          <a href="#">Contact the University</a>
+        </li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Freedom of Information</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+    </div>
+
+
+
+
+
+
+  </div>
+</footer>
+
+</html>

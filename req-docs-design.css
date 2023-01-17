@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Noto Sans';
+
+}
+
+
+nav {
+    width: 100%;
+    padding: 0px 50px;
+    background-color: aquamarine;
+
+}
+
+nav .cont {
+    height: 65px;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+nav .cont>a img {
+
+    width: 150px;
+
+}
+
+
+nav .cont>a {
+    grid-column: 1/4;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+nav .cont .left {
+    grid-column: 4/9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+    padding: 0px 50px;
+}
+
+section table{
+    width: 100%;
+}
+section table tr td{
+    padding: 10px;
+
+}
+section table tr td hr{
+    margin: 20px 0px;
+}
+section table tr td:first-child{
+    width: 50%;
+}
+section table tr td input, select{
+padding: 10px;
+width: 100%;
+}

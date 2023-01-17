@@ -1,0 +1,66 @@
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+}
+
+
+.wrap {
+    width: 100%;
+    display: flex;
+
+}
+
+.wrap img {
+    position: absolute;
+    width: 100% auto;
+    height: 7%;
+    left: 10px;
+    top: 10px;
+}
+
+.wrap .headerpdf {
+    width: 100%;
+    text-align: center;
+}
+
+.wrap .headerpdf span {
+    line-height: 6px;
+
+}
+
+.wrap .headerpdf span p {
+    font-weight: bold;
+}
+
+.wrap .headerpdf span h1 {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: bold;
+    text-transform:uppercase;
+    font-size: 14pt;
+}
+
+
+.wrap .headerpdf span h4{
+    font-weight: 400;
+}
+
+.cog_content{
+    width: 100%;
+    line-height: normal;
+}
+
+.cog_content h2{
+    text-align: center;
+    width: 100%;
+}
+
+.grade-section{
+    height: 300px;
+}
+
+.author-cont img{
+    height: 100px;
+}

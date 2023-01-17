@@ -1,0 +1,988 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Noto Sans';
+    scroll-behavior: smooth;
+
+}
+
+
+
+nav a {
+    text-decoration: none;
+
+}
+
+nav {
+    width: 100%;
+
+    /* Pay special attention here! */
+    position: sticky;
+    top: 0px;
+}
+
+.main-upper-nav-bar,
+.main-lower-nav-bar {
+    width: 100%;
+    height: 100% auto;
+
+}
+
+.main-upper-nav-bar {
+    background-color: black;
+}
+
+.upper-nav-bar,
+.lower-nav-bar,
+.main-content,
+.second-foot-content,
+.reg-tab,
+.form-grid,.core{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 14px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 50px;
+
+
+
+}
+
+.upper-nav-bar {
+
+    height: 100% auto;
+
+
+}
+
+.lower-nav-bar {
+    height: 100% auto;
+
+}
+
+.main-upper-nav-bar .upper-nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10pt;
+
+}
+
+.main-upper-nav-bar .upper-nav-bar div {
+
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+}
+
+.main-upper-nav-bar .upper-nav-bar .cvsuone-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 7;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.main-upper-nav-bar .upper-nav-bar .cvsuone-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.main-upper-nav-bar .upper-nav-bar .cta-btn {
+    grid-column: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003C7A;
+    height: 100%;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11pt;
+}
+
+
+
+.main-lower-nav-bar {
+    background: #FFFFFF;
+    height: 100%;
+    /* border-bottom: 5px solid #29711D; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-lower-nav-bar .lower-nav-bar .cvsu-logo {
+    grid-column: 1/3;
+}
+
+.main-lower-nav-bar .lower-nav-bar .cvsu-logo img {
+    padding: 10px;
+}
+
+.main-lower-nav-bar .lower-nav-bar .active {
+    background-color: #29711D;
+    height: 100%;
+    color: #FFFFFF;
+}
+
+.main-lower-nav-bar .lower-nav-bar a {
+    color: black;
+    font-size: 11pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.main-lower-nav-bar .lower-nav-bar .cvsu-logo img {
+    width: 80%;
+}
+
+.main-lower-nav-bar .lower-nav-bar a:last-child {
+    grid-column: 8;
+    text-align: center;
+}
+
+.main-lower-nav-bar .lower-nav-bar a:nth-child(4) {
+    grid-column: 7;
+    text-align: center;
+}
+
+.main-lower-nav-bar .lower-nav-bar a:nth-child(3) {
+    grid-column: 6;
+    text-align: center;
+}
+
+.main-lower-nav-bar .lower-nav-bar a:nth-child(2) {
+    grid-column: 5;
+    text-align: center;
+}
+
+
+
+.home-hero-main {
+    width: 100%;
+    background: url(assets/cvsudroneshot.png) rgba(41, 113, 29, 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+
+.home-hero-main h1 {
+    color: white;
+    text-align: center;
+}
+
+.home-hero-main h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+}
+
+.home-hero-main h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+}
+
+
+.home-hero-main hr {
+    text-decoration: none;
+    width: 125%;
+    margin-top: 25px;
+    border-bottom: solid white;
+}
+
+.main-content {
+    margin-top: 50px;
+
+
+}
+
+.main-content .main-sidepanel {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.main-content .main-sidepanel a {
+    padding: 20px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1D1D1D;
+    text-decoration: none;
+    border-bottom: solid rgb(187, 187, 187) 1px;
+
+}
+
+.side-content {
+
+    grid-column: 3/9;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+#guides {
+    display: none;
+}
+
+#reg_courses {
+    grid-column: 1;
+}
+
+.guidelines {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 25px;
+
+}
+
+.guidelines p {
+    font-size: 11pt;
+    font-weight: 400;
+    color: #1D1D1D;
+}
+
+.guidelines h1:first-child {
+    grid-column: 1/7;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20pt;
+    line-height: 100%;
+    color: #1D1D1D;
+}
+
+.guidelines p:nth-child(2) {
+    grid-column: 1/7;
+    margin-bottom: 50px;
+    font-style: normal;
+    line-height: 25px;
+}
+
+.guidelines h1:nth-child(3) {
+    grid-column: 1/7;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20pt;
+    line-height: 100%;
+    color: #1D1D1D;
+}
+
+.guidelines p:nth-child(4) {
+    grid-column: 1/3;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.guidelines p:nth-child(5) {
+    grid-column: 3/7;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.guidelines p:nth-child(6) {
+    grid-column: 1/3;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.guidelines div {
+    grid-column: 3/7;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 50px;
+}
+
+.guidelines h1:nth-child(8) {
+    grid-column: 1/7;
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.guidelines p:nth-child(9) {
+    grid-column: 1/7;
+
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    margin-top: 100px;
+}
+
+.main p {
+    padding: 20px 0px;
+    font-weight: 500;
+    font-size: 11pt;
+    border-bottom: solid rgb(187, 187, 187) 1px;
+}
+
+.main h3 {
+    background-color: #29711D;
+    width: 100%;
+    color: white;
+    padding: 10px 0px;
+}
+
+.main h1:first-child {
+    grid-column: 1/4;
+    font-weight: 600;
+    font-size: 20pt;
+    line-height: 100%;
+    color: #1D1D1D;
+}
+
+.main h3:nth-child(2) {
+    grid-column: 1;
+}
+
+.main h3:nth-child(3) {
+    grid-column: 2;
+}
+
+.main .guide-note {
+    grid-column: 1/4;
+    border: none;
+}
+
+.step-num {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 11pt;
+    line-height: 25px;
+
+    color: #000000;
+
+}
+
+.inside-note {
+    color: #003C7A;
+}
+
+
+.end-cta-btn {
+    margin: 50px auto 75px;
+    width: 480px;
+    background-color: #29711D;
+    text-align: center;
+    padding: 20px;
+    display: block;
+}
+
+.end-cta-btn {
+    font-weight: 600;
+    font-size: 11pt;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
+footer {
+    width: 100%;
+
+}
+
+.footer-secondary {
+    background-color: #29711D;
+    height: 270px;
+    margin: auto;
+
+}
+
+.second-foot-content {
+    align-content: center;
+    height: 100%;
+}
+
+.second-foot-content img {
+    grid-column: 1/3;
+    width: 164px;
+    display: flex;
+    align-self: center;
+}
+
+.second-foot-content .soc-links {
+    display: flex;
+    flex-direction: column;
+    grid-column: 6/9;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.second-foot-content .soc-links a,
+.second-foot-content .soc-links span {
+    text-decoration: none;
+    color: white;
+}
+
+
+.second-foot-content .tagline {
+    height: 100%;
+    font-size: 16px;
+    grid-column: 3/6;
+    color: white;
+    align-self: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-main,
+.footer-main div {
+    height: 270px;
+    background: #171717;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    color: white;
+}
+
+.footer-main {
+    justify-content: center
+}
+
+.footer-main div {
+    height: 200px;
+    justify-content: space-around;
+}
+
+.footer-main div img {
+    width: auto;
+    height: 60px;
+}
+
+.footer-main div ul li {
+    list-style: none;
+    text-align: center;
+
+}
+
+.footer-main div ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+/* CvSU COURSES SIDE */
+
+#reg_courses {
+    display: none;
+
+}
+
+#reg_courses {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 25px;
+}
+
+
+.reg_courses h1 {
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+.reg_courses ul li {
+    list-style: none;
+}
+
+.reg_courses div {
+    padding: 20px;
+    border-bottom: solid gray 1px;
+}
+
+
+
+/* LOGIN PAGE HTML */
+
+
+.general-hero-bg {
+    width: 100%;
+    height: 100%;
+    background: url(assets/cvsudroneshot.png) rgba(41, 113, 29, 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.general-hero-cont {
+    margin: auto;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center
+}
+
+.general-hero-cont .left-login {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+.general-hero-cont .left-login h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.general-hero-cont .left-login h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 63px;
+    /* identical to box height */
+
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+}
+
+.general-hero-cont .left-login h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+
+}
+
+.general-hero-cont .left-login p {
+    width: 80%;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14pt;
+    line-height: 157%;
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+}
+
+.general-hero-cont .left-login a {
+    color: #FFFFFF;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14pt;
+    line-height: 157%;
+    letter-spacing: 0.07em
+}
+
+
+
+
+
+
+
+
+.general-hero-cont .right .login-card {
+    width: 470px;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+
+
+
+
+
+
+}
+
+.general-hero-cont .right .login-card div {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.general-hero-cont .right .login-card .semi-header {
+    width: 60%;
+    margin: auto;
+    font-weight: 600;
+    font-size: 12pt;
+    line-height: 175.2%;
+    text-align: center;
+    color: #1E1E1E;
+}
+
+.general-hero-cont .right .login-card .semi-header span {
+    padding: 0px;
+}
+
+.general-hero-cont .right .login-card .semi-header img {
+    transform: translateY(2.5px);
+    width: 100px;
+    height: 19px;
+}
+
+.general-hero-cont .right .login-card .forms {
+    width: 100%;
+    flex-direction: column;
+    margin: 20px 0px;
+
+}
+
+.general-hero-cont .right .login-card .forms label {
+    margin-top: 25px;
+    font-size: 11pt;
+
+    padding: 10px 0px;
+}
+
+
+.general-hero-cont .right .login-card .forms input {
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom:10px ;
+    border: none;
+    border-bottom: solid 1px gray;
+    background-color: #00000000;
+}
+
+.general-hero-cont .right .login-card button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #29711D;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 11pt;
+    color: white;
+}
+
+.general-hero-cont .right .login-card div > span > a  {
+    font-weight: 600;
+color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REGISTRATION HTML */
+
+.general-hero-bg .general-hero-cont .left-reg>a {
+    color: white;
+    font-family: 'Inter';
+}
+
+.general-hero-bg .general-hero-cont .left-reg {
+    color: white;
+}
+
+.general-hero-bg .general-hero-cont .left-reg h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.general-hero-bg .general-hero-cont .left-reg h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+}
+
+
+
+.form-grid {
+    font-family: 'Inter';
+    margin-top: 50px;
+}
+
+
+.form-grid>div {
+    grid-column: 1/9;
+}
+
+.form-grid>div {
+    grid-column: 1/9;
+}
+
+.form-grid h3 {
+    font-size: 20pt;
+    margin: 75px 0px 20px 0px;
+    grid-column: 1/9;
+    font-family: 'Inter';
+}
+
+.form-grid h3 span {
+    color: #29711D;
+}
+
+.form-grid span label {
+    font-weight: 500;
+    font-size: 12pt;
+}
+
+.form-grid span:nth-child(3) {
+    grid-column: 1/4;
+}
+
+.form-grid span:nth-child(4) {
+    grid-column: 1/3;
+}
+
+.form-grid span:nth-child(5) {
+    grid-column: 3/5;
+}
+
+.form-grid span:nth-child(6) {
+    grid-column: 5/7;
+}
+
+.form-grid span:nth-child(7) {
+    grid-column: 7/9;
+}
+
+.form-grid span:nth-child(8) {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-grid span:nth-child(8)>input {
+    padding: 0;
+    width: auto;
+}
+
+.form-grid span:nth-child(9) {
+    grid-column: 4/6;
+}
+
+.form-grid span:nth-child(10) {
+    grid-column: 6/8;
+}
+
+.form-grid span:nth-child(11) {
+    grid-column: 1/4;
+}
+
+
+
+.form-grid span:nth-child(11),
+.form-grid span:nth-child(13),
+.form-grid span:nth-child(15) {
+    grid-column: 1/4;
+}
+
+.form-grid span:nth-child(12),
+.form-grid span:nth-child(14),
+.form-grid span:nth-child(16) {
+    grid-column: 4/7;
+}
+
+.form-grid span>.gender-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+
+}
+
+
+.form-grid span input,
+.form-grid span>select {
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+    border: solid lightgray 2px;
+    border-radius: 100px;
+}
+
+
+.form-grid span:nth-child(18),
+.form-grid span:nth-child(20) {
+    grid-column: 1/7;
+}
+
+.form-grid span:nth-child(19),
+.form-grid span:nth-child(21) {
+    grid-column: 7/9;
+}
+
+
+
+
+.form-grid span:nth-child(23) {
+    grid-column: 1/5;
+}
+
+.form-grid span:nth-child(24) {
+    grid-column: 5/8;
+}
+
+.form-grid span:nth-child(25) {
+    grid-column: 1/8;
+}
+
+.form-grid span:nth-child(27),
+.form-grid span:nth-child(31),
+.form-grid span:nth-child(35) {
+    grid-column: 1/4;
+}
+
+.form-grid span:nth-child(28),
+.form-grid span:nth-child(32),
+.form-grid span:nth-child(36) {
+    grid-column: 4/6;
+}
+
+.form-grid span:nth-child(29),
+.form-grid span:nth-child(33) {
+    grid-column: 6/8;
+}
+
+.set-guardian {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+}
+
+
+.form-grid span:nth-child(30),
+.form-grid span:nth-child(34),
+.form-grid span:nth-child(37) {
+    grid-column: 1/7;
+}
+
+.form-grid button {
+    margin-top: 100px;
+    grid-column: 3/7;
+    padding: 20px;
+    background-color: #29711D;
+    color: white;
+    border: none;
+}
+
+
+
+.form-grid .guardianfield {
+    display: block;
+}
+
+.core{
+    padding: 20px 0px;
+}
+.core h4:nth-child(1),.core p:nth-child(3){
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.core h4:nth-child(2),.core p:nth-child(4){
+    grid-column: 5/9;
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+
+    .main-upper-nav-bar .upper-nav-bar a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11pt;
+
+    }
+
+    .upper-nav-bar {
+
+        height: 50px;
+
+
+    }
+}
